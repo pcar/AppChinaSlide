@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.app-slide {
+	width: 740px;
+	height: 280px;
+	margin: 20px auto;
+}
+
+.app-slide:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.big-wrap {
+	float: left;
+	width: 600px;
+}
+
+.big-wrap img {
+	opacity: 0;
+	-webkit-animation: fadeIn 2s;
+	animation: fadeIn 2s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.small {
+	position: relative;
+	width: 140px;
+	height: 280px;
+	float: right;
+	overflow: hidden;
+}
+
+.small ul {
+	list-style-type: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.small ul li {
+}
+
+.small ul li img {
+	width: 140px;
+	height: 70px;
+	display: block;
+}
+
+.btn {
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	bottom: 5px;
+	margin-left: -25px;
+	background-image: url("http://img.yingyonghui.com/wsrc/app_plus/public/images/turnNext.png");
+	width: 50px;
+	height: 50px;
+	display: block;
+	opacity: 0;
+	z-index: 999;
+	text-indent: -999px;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
